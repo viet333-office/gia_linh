@@ -1,0 +1,310 @@
+/* .material {
+    min-height: 742px;
+} */
+
+.des_luu_ly {
+    padding-top: 15px;
+}
+
+.des_img_luu_ly {
+    width: 334px;
+    height: 204px;
+    margin-bottom: 55px;
+    opacity: 0;
+}
+
+.des_content_luu_ly {
+    padding: 11px 23px 0 20px;
+    animation: push_down 1s forwards 5s linear;
+}
+
+.des_title_luu_ly {
+    animation: push_up_blur 1s forwards 5s linear;
+}
+
+.cover_list_shape {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.list_product_luu_ly {
+    opacity: 1;
+}
+
+.list_product_luu_ly>p {
+    /* chữ tượng thờ đang sai line-height và marigin	"line-height:26px; margin-bottom:10px;". Thực tế line-height: 20px */
+    line-height: 20px;
+    margin-bottom: 10px;
+    animation: appear 1s linear 5s both;
+}
+
+.product_img_luu_ly {
+    width: 98px;
+    height: 60px;
+    /* ảnh ngọc lưu ly khoảng cách với header chưa đúng	set margin-top */
+    margin-top: 7px;
+    margin-bottom: 4px;
+    animation: slide_up_scale 1.5s ease 5s both;
+}
+
+.product_contain_luu_ly {
+    animation: appear 1s linear 5s both;
+}
+
+#buddha_four {
+    width: 310%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-bottom: 164%;
+    overflow: hidden;
+}
+
+#img_four {
+    position: absolute;
+    z-index: 1;
+    width: 32.11%;
+}
+
+.shape_product {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shape_product>p {
+    font-family: "Bong Gio";
+    margin: 0 auto 12px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(214, 190, 141);
+    opacity: 0;
+}
+
+.shape_img_luu_ly {
+    width: 98px;
+    height: 60px;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    opacity: 0;
+}
+
+/* .product_contain_shape {
+    display: none;
+} */
+
+.shapes_first {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shapes_second {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.shapes_second img {
+    width: 100%;
+}
+
+.shapes_second p {
+    margin-top: 1.6px;
+    color: #512719;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.19px;
+    text-align: center;
+}
+
+.shapes_third {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.shapes_third .product_item>p {
+    color: #512719;
+}
+
+.shape_third_bigger {
+    width: 65.5%;
+}
+
+.shape_third_bigger img {
+    width: 100%;
+}
+
+.shape_third_bigger>p {
+    margin-top: 2px;
+    color: #512719;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.19px;
+    text-align: center;
+}
+
+.detail_img_small {
+    max-width: 223px;
+    z-index: 30;
+    width: 56.45%;
+    top: 13px;
+    right: 25px;
+}
+
+.detail_img_big {
+    width: 91.14%;
+    top: 111px;
+}
+
+/* ảnh đè lên đoạn chữ bên dưới	giảm margin-bottom xuống của detail_ads */
+.detail_ads_luu_ly {
+    margin-bottom: 8px;
+}
+
+.detail_name_product {
+    bottom: 82px;
+}
+
+
+@media only screen and (min-width: 481px) {
+
+    .des_img_luu_ly {
+        opacity: 1;
+    }
+
+    .des_content_luu_ly {
+        animation: none;
+    }
+
+    .shape_product {
+        width: 90%;
+        top: 32px;
+    }
+
+    .des_title_luu_ly {
+        animation: none;
+    }
+
+    .cover_list_shape {
+        position: relative;
+        left: 0;
+        transform: none;
+        padding: 0 28px;
+    }
+
+    .product_contain_luu_ly,
+    .list_product_luu_ly>p {
+        animation: none;
+    }
+
+
+    .shapes_second p,
+    .shape_third_bigger>p {
+        color: #D6BE8D;
+    }
+
+    .shapes_third .product_item>p {
+        color: unset;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .des_luu_ly {
+        padding-top: 0;
+    }
+
+    .product_detail {
+        margin: 0 auto;
+    }
+
+    /* kích thước ở màn tablet ngang sai kích thước	set lại kích thước */
+    .list_product_luu_ly {
+        width: 100%;
+    }
+
+    /* .des_content {
+        margin-bottom: 0;
+    } */
+    .shape_product {
+        width: 92.3%;
+    }
+
+    .cover_list_shape {
+        width: 50%;
+    }
+
+    .container_img {
+        height: 204px;
+        width: 304px;
+    }
+
+    .shapes_second p,
+    .shape_third_bigger>p,
+    .shapes_third .product_item>p {
+        color: #512719;
+    }
+}
+
+@keyframes scale_buddha_one {
+    0% {
+        width: 56.45%;
+        top: 13px;
+        right: 25px;
+        transform: translateX(0);
+    }
+
+    60% {
+        width: 92%;
+        max-width: 335px;
+        right: 48.43%;
+        transform: translateX(48.43%);
+        top: 39px;
+    }
+
+    100% {
+        width: 91.14%;
+        right: 45.31%;
+        transform: translateX(45.31%);
+        top: 37px;
+    }
+}
+
+@keyframes scale_buddha_three {
+    0% {
+        width: 54.43%;
+        top: 16px;
+        right: 32px;
+    }
+
+    90% {
+        width: 91%;
+        max-width: 363px;
+        min-height: 68.01%;
+        right: 51%;
+        transform: translateX(51%);
+        top: 112px;
+    }
+
+    100% {
+        width: 90.63%;
+        max-width: 358px;
+        min-height: 68.01%;
+        right: 50%;
+        transform: translateX(50%);
+        top: 110px;
+    }
+}

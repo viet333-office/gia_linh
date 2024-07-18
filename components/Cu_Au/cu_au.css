@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "Bong Gio";
+    src: url(/font/BongGioDisplayRegular.otf);
+}
+
+.material_cu_au {
+    justify-content: space-between;
+}
+
+.des_cu_au {
+    padding-top: 59px;
+}
+
+.des_img_cu_au {
+    width: 308px;
+    height: 155px;
+    margin-bottom: 60px;
+    animation: blur 1s 5s forwards;
+}
+
+ul {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: justify;
+    text-shadow: 2px 0px 1px #000000CF;
+    padding-left: 18px;
+    animation: push_up_blur 1.5s linear 5s forwards;
+}
+
+.des_content_cu_au {
+    padding: 14px 23px 26px 20px;
+    margin: 0 auto 74px;
+    animation: push_down 1.5s linear 5s forwards;
+}
+
+.des_content p {
+    /* thêm animation */
+    animation: push_up_blur 1.5s linear 5s forwards;
+}
+
+
+/* list_product*/
+
+
+.list_product_cu_au {
+    margin-bottom: 55px;
+    animation: appear 1s linear 5s both;
+    left: 51%;
+}
+
+.product_img_cu_au {
+    width: 120px;
+    height: 61px;
+    margin-bottom: 2px;
+}
+
+.products_cu_au {
+    margin-bottom: 32px;
+}
+
+
+.product_cu_au>p {
+    margin-top: 3px;
+}
+
+
+/* product detail */
+.product_detail_cu_au {
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 55px;
+
+}
+
+.detail_img_small_cu_au {
+    max-width: 251px;
+    z-index: 30;
+    width: 63.54%;
+    top: 5px;
+    right: 5px;
+}
+
+.detail_img_big_cu_au {
+    width: 84.3%;
+    top: 59px;
+    right: 50%;
+}
+
+
+/* chưa css top cho name-product */
+.name_product_cu_au {
+    bottom: 93px;
+}
+
+/* ads thiếu thẻ br */
+@media only screen and (min-width: 481px) {
+    .list_product_cu_au {
+        animation: none;
+    }
+
+    /* .list_product_cu_au {
+        padding: 0 28px;
+    } */
+
+    ul {
+        line-height: 18px;
+    }
+
+    .des_img_cu_au,
+    .des_content_cu_au,
+    ul,
+    .des_content p {
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .img_container_cu_au {
+        height: 155px;
+        width: 308px;
+    }
+
+    .des_cu_au {
+        padding-top: 0px;
+    }
+}
+
+
+/* animation */
+/* đoạn code bị bug */
+/* @keyframes scale_buddha_one {
+    0% {}
+
+    60% {
+        max-width: 335px;
+        width: 85%;
+        right: 33px;
+        top: 61px;
+    }
+
+    100% {
+        max-width: 333px;
+        width: 84.31%;
+        right: 31px;
+        top: 59px;
+    }
+} */
+/* tăng thêm px ở thuộc tính right */
+@keyframes scale_buddha_one {
+    0% {}
+
+    60% {
+        max-width: 335px;
+        width: 85%;
+        right: 43px;
+        top: 61px;
+    }
+
+    100% {
+        max-width: 333px;
+        width: 84.31%;
+        right: 40px;
+        top: 60px;
+    }
+}
+
+@keyframes scale_buddha_one_tablet_ngang {
+    0% {}
+
+    60% {
+        max-width: 335px;
+        width: 85%;
+        right: 53px;
+        top: 61px;
+    }
+
+    100% {
+        max-width: 333px;
+        width: 84.31%;
+        right: 51px;
+        top: 59px;
+    }
+}
+
+@keyframes scale_buddha_two {
+    0% {}
+
+    60% {
+        max-width: 367px;
+        min-height: 55.13%;
+        width: 367px;
+        right: 6px;
+        top: 127px;
+    }
+
+    100% {
+        max-width: 365px;
+        width: 365px;
+        right: 2px;
+        top: 125px;
+    }
+}
+
+@keyframes scale_buddha_two_tablet_ngang {
+    0% {}
+
+    90% {
+        max-width: 367px;
+        min-height: 55.13%;
+        width: 367px;
+        right: 40px;
+        top: 127px;
+    }
+
+    100% {
+        max-width: 365px;
+        width: 365px;
+        right: 38px;
+        top: 125px;
+    }
+}
+
+@keyframes scale_buddha_three {
+    0% {}
+
+    70% {
+        max-width: 318px;
+        width: 318px;
+        right: 42px;
+        top: 22px;
+    }
+
+    100% {
+        max-width: 316px;
+        width: 316px;
+        right: 40px;
+        top: 20px;
+    }
+}
+
+
+@keyframes scale_buddha_three_tablet_ngang {
+    0% {}
+
+    60% {
+        max-width: 318px;
+        width: 318px;
+        right: 62px;
+        top: 22px;
+    }
+
+    100% {
+        max-width: 316px;
+        width: 316px;
+        right: 60px;
+        top: 20px;
+    }
+}
+
+@keyframes name_product_two {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(30px) translateY(395px);
+    }
+}
+
+@keyframes sub_name_product_two {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) translateY(-340px);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateX(51%) translateY(2px);
+
+    }
+
+    100% {
+        transform: translateX(50%) translateY(0);
+    }
+}

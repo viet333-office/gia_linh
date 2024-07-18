@@ -1,0 +1,9 @@
+.demo {
+  font-family: "Bong Gio";
+  color: #d6be8d;
+}
+
+@font-face {
+  font-family: "Bong Gio";
+  src: url(./BongGioDisplayRegular.otf);
+}

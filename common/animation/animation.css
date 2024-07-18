@@ -1,0 +1,497 @@
+
+@keyframes logo_up {
+    from {
+        width: 315px;
+        height: 320px;
+        transform: translateY(265px);
+    }
+
+    to {
+        width: 73px;
+        height: 74px;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes buddha_up {
+    from {
+        transform: translateY(932px);
+    }
+
+    to {
+        transform: translateY(-19px);
+    }
+}
+
+@keyframes blur {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blur_none {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes appear_block {
+    from {
+        opacity: 0;
+        display: block;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes material_onyx_img {
+    from {
+        transform: translateY(80px);
+        width: 299px;
+    }
+
+    to {
+        transform: translateY(5px);
+        width: 132px;
+    }
+}
+
+
+@keyframes push_down {
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(20px) translateY(800px);
+    }
+}
+
+
+@keyframes push_up_blur {
+    from {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-20px) translateY(-800px);
+        opacity: 0;
+    }
+}
+
+@keyframes push_left {
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(-480px) translateY(-800px);
+    }
+}
+
+
+@keyframes id_list {
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(50%) translateY(-50%);
+    }
+}
+
+@keyframes id_detail {
+    from {
+        transform: translateX(-20%) translateY(50%);
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes name_product_fly {
+    0% {
+        position: absolute;
+        bottom: 470px;
+        left: 28px;
+        transform: translateX(0);
+    }
+
+    70% {
+        position: absolute;
+        bottom: 70px;
+        left: 51%;
+        transform: translateX(-48%);
+    }
+
+    100% {
+        position: absolute;
+        bottom: 78px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@keyframes name_product_fly_reverse {
+    0% {
+        position: absolute;
+        bottom: 73px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    30% {
+        position: absolute;
+        bottom: 65px;
+        left: 52%;
+        transform: translateX(-48%);
+    }
+
+    100% {
+        position: absolute;
+        bottom: 470px;
+        left: 28px;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes name_product_fly_none {
+    0% {
+        position: absolute;
+        bottom: 470px;
+        left: 28px;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    70% {
+        position: absolute;
+        bottom: 65px;
+        left: 52%;
+        transform: translateX(-48%);
+        opacity: 0;
+    }
+
+    100% {
+        position: absolute;
+        bottom: 73px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes name_product_fly_none_reverse {
+    0% {
+        position: absolute;
+        bottom: 73px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+    }
+
+    30% {
+        position: absolute;
+        bottom: 65px;
+        left: 52%;
+        transform: translateX(-48%);
+        opacity: 0;
+    }
+
+    100% {
+        position: absolute;
+        bottom: 470px;
+        left: 28px;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes name_product_fly_appear {
+    0% {
+        position: absolute;
+        bottom: 470px;
+        left: 28px;
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    70% {
+        position: absolute;
+        bottom: 65px;
+        left: 52%;
+        transform: translateX(-48%);
+        opacity: 1;
+    }
+
+    100% {
+        position: absolute;
+        bottom: 73px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes name_product_fly_none_reverse {
+    0% {
+        position: absolute;
+        bottom: 73px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    30% {
+        position: absolute;
+        bottom: 65px;
+        left: 52%;
+        transform: translateX(-48%);
+        opacity: 1;
+    }
+
+    100% {
+        position: absolute;
+        bottom: 470px;
+        left: 28px;
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+/* @keyframes scale_down {
+    0% {
+        top: px;
+        right: px;
+        width: %;
+    }
+
+    70% {
+        top: px;
+        right: px;
+        width: %;
+    }
+
+    100% {
+        top: px;
+        right: px;
+        width: %;
+    }
+}
+
+@keyframes scale_up {
+    0% {
+        top: px;
+        right: px;
+        width: %;
+    }
+
+    70% {
+        top: px;
+        right: px;
+        width: %;
+    }
+
+    100% {
+        top: px;
+        right: px;
+        width: %;
+    }
+} */
+
+@keyframes scale_right {
+    0% {
+        top: 100px;
+        right: 67.88%;
+        width: 31.14%;
+    }
+
+    70% {
+        top: 21px;
+        right: 25px;
+        width: 61%;
+    }
+
+    100% {
+        top: 22px;
+        right: 26px;
+        width: 60%;
+    }
+}
+
+@keyframes slide_up_scale {
+    0% {
+        transform: scale(3.4) translateY(43%);
+    }
+
+    90% {
+        transform: scale(0.95) translateY(-2px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+    }
+}
+
+@keyframes two_four_down {
+    0% {
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110px);
+        opacity: 0;
+    }
+}
+
+@keyframes five_down_right {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(25px) translateY(110px);
+        opacity: 0;
+    }
+}
+
+@keyframes seven_eight_up_right {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(90px) translateY(-290px);
+        opacity: 0;
+    }
+}
+
+@keyframes two_three_up_right {
+    0% {
+        transform: translateX(-90px) translateY(310px);
+    }
+
+    70% {
+        position: relative;
+        z-index: 50;
+        transform: translateX(5px) translateY(-5px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes four_five_down {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    70% {
+        position: relative;
+        z-index: 50;
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes six_down_right {
+    0% {
+        transform: translateX(-22px) translateY(-210px);
+    }
+
+    70% {
+        transform: translateX(5px) translateY(5px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes collection {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes img_four_scale_right {
+    from {
+        width: 32.11%;
+        transform: translateX(0px);
+    }
+
+    to {
+        width: 100%;
+        transform: translateX(0) translateY(-200px);
+    }
+}
+
+@keyframes name_slide_right {
+    0% {
+        opacity: 1;
+        transform: translateX(-250%);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(51.5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(50%);
+    }
+}

@@ -1,0 +1,96 @@
+.footer {
+    background-color: #22100a !important;
+}
+
+.contact {
+    /* min-height: 817px; Tất cả các màn bị scroll và bé lại lộ ra phần background  */
+    /* padding-bottom: 33px; lộ ra 1 vạch ở hiển thị ra màu background */
+    padding-bottom: 32px;
+}
+
+.contact_img {
+    width: 268px;
+    height: 93px;
+    margin: 42px auto 0;
+    display: block;
+}
+
+.contact_content {
+    height: 615px;
+    margin-top: 34px;
+    padding-left: 33px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(34, 20, 14, 0.3),
+            rgba(34, 20, 14, 0.8));
+}
+
+.info p {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 11px;
+    color: #D6BE8D;
+    margin-bottom: 8px;
+}
+
+.info span {
+    font-weight: 500;
+}
+
+.img {
+    width: 1323px;
+    position: absolute;
+    height: 744px;
+    right: -120px;
+    top: -70px;
+    z-index: 1;
+    transition: 2s;
+}
+
+.mini_logo {
+    top: 244px;
+    right: 475px;
+    z-index: 5;
+    position: absolute;
+    height: 46px;
+    width: 47px;
+    transition: 2s;
+}
+
+@media only screen and (min-width: 481px) {
+    .contact_content {
+        height: 650px;
+    }
+
+    .info {
+        margin-bottom: 25px;
+    }
+
+    .contact_content {
+        align-items: center;
+    }
+
+    .info p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 909px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .img,
+    .mini_logo {
+        transition: 1.5s;
+    }
+}

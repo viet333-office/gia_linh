@@ -1,0 +1,304 @@
+/* sai tên class và đổi từ img_container_news thành hiệnt tại */
+.container_img_news {
+  display: block;
+  height: 135px;
+  width: 306px;
+  margin: 69px auto 0;
+}
+
+.material_news {
+  margin-bottom: 40px;
+  /* min-height: 359px; tăng kích thước min-height */
+  min-height: 550px;
+  padding-top: 33px;
+}
+
+.list_product_news {
+  opacity: 1;
+  top: 33px;
+  /* chuyển padding vào material_news */
+  /* padding-top: 33px; */
+}
+
+.des_content_news {
+  padding: 0 26px 29px 25px;
+  display: flex;
+  justify-content: space-between;
+  /* thêm margin-top vì khối chưa có khoảng cách đúng */
+  margin-top: 37px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  opacity: 0;
+}
+
+.left_img {
+  position: relative;
+  top: -18px;
+  left: -40px;
+  width: 130.7%;
+  object-fit: cover;
+  margin-bottom: -10px;
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.news_detail_left {
+  width: 45.49%;
+}
+
+.news_detail_right {
+  width: 45.49%;
+  min-height: 414px;
+  margin-top: 26px;
+  padding: 6px 8px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(49, 0, 0, 0.5));
+}
+
+.news_detail_right p {
+  font-size: 6.9px;
+  font-weight: 300;
+  line-height: 9.1px;
+  text-align: justify;
+}
+
+.news_item {
+  width: 32.6%;
+  /* thêm max-height */
+  max-height: 159px;
+}
+
+.news_detail_left>p:nth-child(2) {
+  font-family: "Bong Gio";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+}
+
+.news_detail_left>p:nth-child(3) {
+  font-size: 7px;
+  font-weight: 300;
+  line-height: 6px;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.left_text {
+  margin-top: 28px;
+  padding: 8px 8px 5px;
+  width: 100%;
+  min-height: 210px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(49, 0, 0, 0.5));
+}
+
+.left_text p {
+  font-size: 6.9px;
+  font-weight: 300;
+  line-height: 9.1px;
+  text-align: justify;
+}
+
+.news_item img {
+  width: 100%;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.news_item:nth-child(4) p,
+.news_item:nth-child(5) p,
+.news_item:nth-child(6) p,
+.news_item:nth-child(7) p,
+.news_item:nth-child(8) p,
+.news_item:nth-child(9) p {
+  color: #512719;
+}
+
+.news_item p:nth-child(2) {
+  font-family: "Bong Gio";
+  font-size: 8px;
+  font-weight: 300;
+  line-height: 8px;
+  margin-top: 3px;
+}
+
+.news_item p {
+  color: #d6be8d;
+  margin-left: 25px;
+}
+
+.news_item p:nth-child(3) {
+  margin-top: 1px;
+  font-size: 5px;
+  font-weight: 300;
+  line-height: 6px;
+}
+
+.product_contain_news {
+  /* width: 100%; bỏ thuộc tính thừa*/
+  row-gap: 28px;
+  /* thêm max-height để khối không bị khuyết */
+}
+
+@media only screen and (min-width: 481px) {
+  .news_detail_left>p:nth-child(3) {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .material_news {
+    flex-direction: column-reverse;
+  }
+
+  .left_text p,
+  .news_detail_right p {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .left_text {
+    padding: 8px 8px 35px;
+  }
+
+  .news_detail_right {
+    margin-top: 32px;
+  }
+
+  .left_text,
+  .news_detail_right {
+    min-height: unset;
+  }
+
+  .news_detail_left,
+  .news_detail_right {
+    width: 47%;
+  }
+
+  .des_content_news {
+    position: relative;
+    z-index: 1;
+    transform: none;
+    /* ở màn tablet-dọc bị lệch sang bên phải và chèn lên danh sách. set left: 0; và margin-top: 85px; */
+    left: 0;
+    margin-top: 85px;
+    max-width: 550px;
+    padding-top: 0;
+    opacity: 1;
+  }
+
+  .news_detail_left>p:nth-child(2) {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .list_product_news {
+    max-width: 550px;
+  }
+
+  .news_item {
+    max-height: unset;
+  }
+
+  .news_item p:nth-child(2) {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .news_item p:nth-child(3) {
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .contact_detail_img {
+    width: 120%;
+    min-width: 195px;
+    max-width: 275px;
+  }
+
+  .news_item:nth-child(4) p,
+  .news_item:nth-child(5) p,
+  .news_item:nth-child(6) p,
+  .news_item:nth-child(7) p,
+  .news_item:nth-child(8) p,
+  .news_item:nth-child(9) p {
+    color: #d6be8d;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .des_content_news {
+    margin: 25px;
+    width: 50%;
+    /* ở màn tablet ngang thì chưa đúng vị trí. "position: unset; transform: none;" */
+    position: unset;
+    transform: none;
+  }
+
+  .material_news {
+    flex-direction: row;
+  }
+
+  .news_detail_right {
+    min-height: 414px;
+  }
+
+  .left_text {
+    min-height: 210px;
+  }
+
+  .news_item p:nth-child(2) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .contact_detail_img {
+    min-width: 180px;
+    opacity: 1;
+  }
+
+  .news_item p {
+    margin-left: 10px;
+  }
+
+  .left_text p,
+  .news_detail_right p {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .left_text {
+    padding-top: 12px;
+  }
+
+  .news_item:nth-child(4) p,
+  .news_item:nth-child(5) p,
+  .news_item:nth-child(7) p,
+  .news_item:nth-child(8) p,
+  .news_item:nth-child(9) p {
+    color: #512719;
+  }
+}
+
+@keyframes blur_none {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

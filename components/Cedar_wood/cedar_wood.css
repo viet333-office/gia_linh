@@ -1,0 +1,288 @@
+.material_cedar_wood {
+  min-height: 817px;
+  margin-bottom: 0;
+}
+
+/* -------------------DES------------------- */
+.des_cedar_wood {
+  min-height: 784px;
+  margin-bottom: 33px;
+  padding-top: 54px;
+  animation: hiden 3s 5s forwards;
+}
+@keyframes hiden {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+.des_content_cedar_wood {
+  margin-top: 42px;
+  padding: 18px 23px 22px 20px;
+  position: relative;
+  z-index: 1;
+}
+.des_title_cedar_wood {
+  font-weight: 300;
+  line-height: 15px;
+}
+/* -------------------LIST PRODUCT------------------- */
+.list_product_cedar_wood {
+  padding: 0 18px 0 29px;
+  animation: show 3s 5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.product_img_cedar_wood {
+  width: 146px;
+  height: 65px;
+}
+.list_product_cedar_wood > p {
+  line-height: 28px;
+  margin-bottom: 6px;
+}
+.product_contain_cedar_wood {
+  width: 100%;
+  margin: 2px auto 30px;
+  max-width: 393px;
+}
+.product_item p {
+  line-height: 15px;
+}
+/* -------------------PRODUCT DETAIL------------------- */
+
+.detail_img_small_cedar_wood {
+  width: 60.76%;
+  top: 15px;
+  right: 12px;
+  max-width: 310px;
+}
+
+.detail_img_big_cedar_wood {
+  width: 92.66%;
+  top: 50px;
+  display: block;
+  z-index: -1;
+  opacity: 0;
+  max-width: 370px;
+}
+
+.detail_info_cedar_wood {
+  margin-bottom: 36px;
+}
+
+.detail_ads_cedar_wood {
+  margin: 0 0 13px 8px;
+  letter-spacing: 0.04px;
+}
+
+.detail_info p:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 481px) {
+  /* -------------------DES------------------- */
+  .des_content_cedar_wood {
+    min-height: unset;
+    padding: 30px 25px 30px 25px;
+  }
+  .des_cedar_wood {
+    animation: none;
+    min-height: unset;
+  }
+
+  /* -------------------LIST PRODUCT------------------- */
+  .list_product_cedar_wood {
+    opacity: 1;
+    animation: none;
+    margin-top: 0;
+  }
+  .product_contain_cedar_wood {
+    margin: 10px auto;
+    max-width: 480px;
+  }
+  /* -------------------PRODUCT DETAIL------------------- */
+  .product_detail_cedar_wood {
+    margin-bottom: 50px;
+    max-width: 480px;
+  }
+  .detail_img_small_cedar_wood {
+    max-width: 260px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container_img_cedar_wood {
+    height: 125px;
+    width: 299px;
+  }
+  /* -------------------DES------------------- */
+  .des_cedar_wood {
+    padding-top: 0;
+  }
+  .material_cedar_wood {
+    min-height: unset;
+  }
+  /* -------------------LIST PRODUCT------------------- */
+  .product_contain_cedar_wood {
+    max-width: 380px;
+  }
+  /* -------------------PRODUCT DETAIL------------------- */
+  .detail_ads_cedar_wood {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product_detail_cedar_wood {
+    width: calc(50% - 40px);
+    padding-bottom: 30px;
+    min-height: 700px;
+  }
+}
+
+/* ANIMATION */
+
+@keyframes id_list {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(20%) translateY(-100%);
+  }
+}
+@keyframes blur_none {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes blur {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes id_detail {
+  from {
+    opacity: 0;
+    transform: translateX(-5%) translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear_block {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes name_product_fly {
+  0% {
+    position: absolute;
+    bottom: 470px;
+    left: 28px;
+    transform: translateX(0);
+  }
+  70% {
+    position: absolute;
+    bottom: 70px;
+    left: 50.1%;
+    transform: translateX(-49.9%);
+  }
+  100% {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@keyframes name_product_fly_none {
+  0% {
+    position: absolute;
+    bottom: 470px;
+    left: 28px;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    position: absolute;
+    bottom: 100px;
+    left: 50.8%;
+    transform: translateX(-65%);
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    bottom: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes sub_name_product_fly_none {
+  0% {
+    position: absolute;
+    bottom: 350px;
+    left: 38%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  90% {
+    position: absolute;
+    bottom: 70px;
+    left: 50.2%;
+    transform: translateX(-49.8%);
+    opacity: 1;
+  }
+  100% {
+    position: absolute;
+    bottom: 77px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+@keyframes run_img_2 {
+  0% {
+  }
+
+  100% {
+    transform: translateX(50%);
+    right: 50%;
+    width: 125%;
+  }
+}

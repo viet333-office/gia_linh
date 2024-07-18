@@ -1,0 +1,98 @@
+.container_img_ceramic {
+    width: 306px;
+    height: 135px;
+}
+
+.des_ceramic {
+    padding-top: 69px;
+}
+
+.des_img_ceramic {
+    width: 306px;
+    height: 135px;
+    margin-bottom: 70px;
+    animation: blur_none 2s linear 1s forwards;
+}
+
+.des_content_ceramic {
+    padding: 11px 23px 0;
+    animation: push_down 2s linear 1s forwards;
+}
+
+.des_content_ceramic>* {
+    animation: push_up_blur 2s linear 1s forwards;
+}
+
+.list_product_ceramic {
+    animation: appear 2s linear 1s forwards;
+}
+
+.product_img_ceramic {
+    width: 146px;
+    height: 65px;
+}
+
+.detail_img_small_ceramic {
+    width: 60.76%;
+    top: 15px;
+    right: 12px;
+    max-height: 510px;
+}
+
+.detail_img_big_ceramic {
+    width: 92.66%;
+    top: 50px;
+}
+
+.detail_ads_ceramic {
+    /* font-weight: 400; Phần giới thiệu chi tiết sản phẩm quá đậm*/
+    font-weight: 300;
+    line-height: 15.85px;
+}
+
+.detail_name_product_ceramic {
+    bottom: 78px;
+}
+
+@keyframes scale_down_QV {
+    0% {
+        top: 15px;
+        right: 3.04%;
+        width: 60.76%;
+        transform: translateX(0);
+    }
+
+    70% {
+        /* top: 55px; amnimation nhìn trông không mượt */
+        top: 30px;
+        right: 51%;
+        width: 93%;
+        transform: translateX(51%);
+    }
+
+    100% {
+        /* top: 50px; Top quá cao */
+        top: 17px;
+        right: 50%;
+        width: 92.66%;
+        transform: translateX(50%);
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .des_img_ceramic {
+        animation: none;
+    }
+
+    .des_content_ceramic {
+        animation: none;
+    }
+
+    .des_content_ceramic>* {
+        animation: none;
+    }
+
+    .list_product_ceramic {
+        animation: none;
+    }
+}

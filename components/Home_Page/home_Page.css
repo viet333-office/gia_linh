@@ -1,0 +1,85 @@
+.container_home_page {
+    position: relative;
+}
+
+.home_page {
+    min-height: 784px;
+    margin: 0 auto 33px;
+}
+
+.header_logo img {
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 315px;
+    position: absolute;
+    animation: logo_up 3s ease 2s forwards;
+    width: 315px;
+    height: 320px;
+    transform: translateX(-50%) translateY(265px);
+}
+
+@keyframes logo_up {
+    from {
+        width: 315px;
+        height: 320px;
+        transform: translateX(-50%) translateY(265px);
+    }
+
+    to {
+        width: 73px;
+        height: 74px;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes buddha_up {
+    from {
+        transform: translateX(-43.7%) translateY(932px);
+    }
+
+    to {
+        /* khoảng cách của ảnh với header chưa đúng	sửa translateY */
+        transform: translateX(-43.7%) translateY(-15px);
+    }
+}
+
+@keyframes buddha_up_text {
+    from {
+        transform: translateY(932px);
+    }
+
+    to {
+        transform: translateY(-19px);
+    }
+}
+
+.home_page img {
+    /* kích thước ảnh chưa đúng	thay đổi width và transform: translateX() */
+    width: 656px;
+    height: 540px;
+    transform: translateX(-43.7%) translateY(932px);
+    left: 50%;
+    position: relative;
+    animation: buddha_up 3s ease 2s forwards;
+}
+
+.home_page p {
+    margin: 44px auto 5px;
+    text-align: center;
+    font-family: "SVN-Kingston";
+    padding-left: 5px;
+    font-size: 26px;
+    line-height: 36.25px;
+    /* màu chữ nhạt 	tìm màu chữ phù hợp	đổi thành màu chữ rgb (128,92,27) và kết hợp filter: brightness(0.87) */
+    color: rgb(128, 92, 27);
+    filter: brightness(0.87);
+    animation: buddha_up_text 3s ease 2s forwards;
+    transform: translateY(932px);
+    -webkit-text-stroke: 0.08px;
+}
+
+@font-face {
+    font-family: "SVN-Kingston";
+    src: url(../../font/SVN-Kingston.ttf);
+}

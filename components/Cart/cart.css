@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart {
+    padding: 14px 28px 100px;
+    background-color: rgba(81, 39, 25, 1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(49, 29, 21, 0.78));
+    opacity: 0.92;
+}
+
+/* thẻ p đầu tiên */
+.cart > p {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 12.8px;
+    color: rgba(214, 190, 141, 1);
+    margin-bottom: 6px;
+}
+
+/* hr */
+.cart hr {
+    border: 0.25px dotted #D6BE8D;
+    margin-left: 3px;
+    margin-right: 1px;
+}
+
+/* phần sản phẩm đã đặt */
+.cart .ordered_product_list {
+    margin: 14px 0 18px;
+    width: 100%;
+}
+.cart .ordered_product_list .information_product {    
+    display :flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cart .ordered_product_list .information_product:first-child {
+    margin-bottom: 9px;
+}
+
+.cart .ordered_product_list .information_product .detail_product_ordered {
+    display: flex;
+    width: 60%;
+    align-items: flex-end;
+}
+
+.cart .ordered_product_list .information_product .detail_product_ordered img {
+    width: 84px;
+    height: 115px;
+}
+
+.cart .ordered_product_list .information_product .detail_product_ordered .detail_info_ordered {
+    margin-left: 10px;
+    width: fit-content;
+}
+
+.cart .ordered_product_list .information_product .detail_product_ordered .detail_info_ordered p {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 12.8px;
+    color: rgba(214, 190, 141, 1);
+}
+
+.cart .ordered_product_list .information_product .detail_product_ordered .detail_info_ordered p:first-child {
+    font-weight: 700;
+}
+
+.cart .ordered_product_list .information_product > p {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: 700;
+    line-height: 12.8px;
+    color: rgba(214, 190, 141, 1);
+    align-self: flex-end;
+    width: fit-content;
+}
+
+.cart .ordered_product_list .information_product:first-child > p {
+    margin-bottom: 19px;  
+}
+
+/* tổng giá trị đơn hàng */
+.cart .total_value {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 26px 4px;
+}
+
+.cart .total_value p {
+    font-family: Montserrat;
+    color: rgba(214, 190, 141, 1);
+    font-size: 11.5px;
+    font-weight: 700;
+    line-height: 12.8px;
+}
+.cart .total_value p:first-child {
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 12.8px;
+}
+
+/* thông tin khách hàng */
+.cart .customer_information {
+    background-color: #512719;
+    width: 100%;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 18px 27px 15px;
+    margin-bottom: 56px;
+}
+.cart .customer_information p {
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: 400;
+    line-height: 14.02px;
+    color: rgba(214, 190, 141, 1);
+}
+
+/* phương thức thanh toán */
+.cart .payment_methods {
+    width: 100%;
+}
+.cart .payment_methods > p {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: 400;
+    line-height: 14.02px;
+    color: rgba(214, 190, 141, 1);
+    margin-bottom: 37px;
+}
+.cart .payment_methods .payment_methods_image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart .payment_methods .payment_methods_image img:first-child {
+    width: 70px;
+    height: 69px;
+}
+.cart .payment_methods .payment_methods_image img:nth-child(2) {
+    width: 76px;
+    height: 46px;
+}
+.cart .payment_methods .payment_methods_image img:nth-child(3) {
+    width: 75px;
+    height: 75px;
+}
+
+
+/* tablet dọc */
+@media only screen and (min-width: 481px) {
+    .cart {
+        padding: 14px 40px 80px;
+    }
+
+    .cart > p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .cart .ordered_product_list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cart .ordered_product_list .information_product {
+        justify-content: space-around;
+        align-items: center;
+        min-width: 390px;
+    }
+
+    .cart .ordered_product_list .information_product > p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .cart .ordered_product_list .information_product .detail_product_ordered img {
+        width: 126px;
+        height: 172.5px;
+    }
+
+    .cart .ordered_product_list .information_product .detail_product_ordered .detail_info_ordered {
+        margin-left: 20px;
+    }
+
+    .cart .ordered_product_list .information_product .detail_product_ordered .detail_info_ordered p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .cart .total_value p {
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .cart .customer_information p {
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .cart .payment_methods p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .cart .payment_methods .payment_methods_image img:first-child {
+        width: 105px;
+        height: 103.5px;
+    }
+    .cart .payment_methods .payment_methods_image img:nth-child(2) {
+        width: 114px;
+        height: 69px;
+    }
+    .cart .payment_methods .payment_methods_image img:nth-child(3) {
+        width: 112.5px;
+        height: 112.5px;
+    }
+
+}
+
+/* tablet ngang */
+@media only screen and (min-width: 769px) {
+    .cart {
+        padding: 14px 80px 80px;
+    }
+
+    .cart > p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cart .ordered_product_list .information_product > p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cart .ordered_product_list .information_product .detail_product_ordered .detail_info_ordered p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cart .total_value p {
+        font-size: 15px !important;
+        line-height: 16px !important;
+    }
+
+    .cart .customer_information p {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .cart .payment_methods p {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .cart .payment_methods .payment_methods_image img:first-child {
+        width: 157.5px;
+        height: 155.25px;
+    }
+    .cart .payment_methods .payment_methods_image img:nth-child(2) {
+        width: 171px;
+        height: 103.5px;
+    }
+    .cart .payment_methods .payment_methods_image img:nth-child(3) {
+        width: 168.75px;
+        height: 168.75px;
+    }
+
+}

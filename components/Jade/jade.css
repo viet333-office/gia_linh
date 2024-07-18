@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* des */
+.material_jade .des_jade .des_img_jade {
+    margin: 0 auto 34px;
+    width: 295px;   
+}
+
+.material_jade .des_jade .des_content_jade {
+    padding: 20px 23px 8px 20px;
+}
+
+.des_jade {
+    padding-top: 42px;
+    animation: blur 2s 2s forwards;
+}
+
+.des_content_jade {
+    animation: push_down 2s 2s;
+}
+
+.des_title_jade {
+    animation: push_up_blur 2s 2s;
+}
+
+
+
+
+/* list product */
+.material_jade .list_product_jade .product_img_jade {
+    width: 99px;
+    height:67px;
+}
+
+.list_product_jade {
+    animation: appear_block 2s 2s forwards;
+}
+.list_product_jade>p{
+    line-height:26px;
+margin-bottom:10px;
+}
+
+
+
+
+/* detail product */
+.product_detail_jade {
+    margin: 0 auto;
+}
+.detail_info_jade{
+    margin-bottom: 35px;
+}
+.product_detail_jade .detail_img_small_jade {
+    z-index: 1;
+    width: 60%;
+    top: 22px;  
+    right: 26px;
+}
+.material_jade .product_detail_jade .detail_ads_jade {
+    font-weight: 400;
+    line-height: 15.85px;
+}
+.material_jade .product_detail_jade .detail_name_product_jade {
+    bottom: 82px;
+}
+
+/* man tablet dọc */
+@media only screen and (min-width: 481px) {
+    .des_jade {
+        animation: none;
+        min-height: unset;
+        margin-bottom: 60px;
+    }
+
+    .des_jade .des_content_jade {
+        animation: none;
+    }
+
+    .des_jade .des_content_jade .des_title_jade {
+        animation: none;
+    }
+
+    .list_product_jade {
+        animation: none;
+    }
+
+    .material_jade {
+        padding: 0 20px;
+    }
+}
+
+/* màn tablet ngang */
+@media only screen and (min-width: 769px) {
+    .container > .container_img_jade {
+        width: 295px;   
+    }
+
+    .des_jade {
+        padding-top: 68px;
+    }
+
+    .des_jade .des_content_jade {
+        min-height: 594px;
+    }
+
+    .des_jade .des_content_jade .des_title_jade {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+
+@keyframes push_up_blur {
+    from {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-20px) translateY(-700px);
+        opacity: 0;
+    }
+}
+@keyframes scale_right {
+    0% {
+        top: 100px;
+        right: 67.88%;
+        width: 31.14%;
+    }
+
+    60% {
+        top: 20px;
+        right: 12px;
+        width: 62%;
+    }
+
+    100% {
+        top: 21px;
+        right: 26px;
+        width: 60%;
+    }
+}
+
+@keyframes scale_down {
+    0% {
+       
+    }
+
+    60% {
+        top: 40px;
+        right: 30px;
+        width: 87%;
+    }
+
+    100% {
+        top: 40px;
+        right: 30px;
+        width: 84%;
+    }
+}
+
+@keyframes scale_down_tablet {
+    0% {
+       
+    }
+
+    60% {
+        top: 40px;
+        right: 50px;
+        width: 80%;
+    }
+
+    100% {
+        top: 40px;
+        right: 45px;
+        width: 78%;
+    }
+}

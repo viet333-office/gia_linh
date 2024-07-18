@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* màu chữ chưa đúng thay mã màu  */
+    color: #b6a37d;
+    font-family: Montserrat;
+    will-change: contents;
+}
+
+p,
+ul,
+ol {
+    filter: brightness(1.17);
+}
+
+/* --------------------------container------------------------------- */
+
+.container {
+    background-image: url(./img_common/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* --------------------------header------------------------------- */
+
+.header {
+    display: flex;
+    width: 100%;
+    /* khoảng cách so với 2 lề chưa đúng	tăng padding left right */
+    padding: 41px 38px 0;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Bong Gio";
+    src: url(/font/BongGioDisplayRegular.otf);
+}
+
+.header_navbar {
+    font-family: "Bong Gio";
+    font-weight: 700;
+    font-size: 10.5px;
+    line-height: 20.5px;
+    text-align: center;
+    background: linear-gradient(#e6c36b, #806d3b);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.7px transparent;
+}
+
+#navbar {
+    position: relative;
+}
+
+.header_logo {
+    width: 73px;
+    height: 74px;
+}
+
+.navbar_menu {
+    width: 104px;
+    height: 156px;
+    position: absolute;
+    z-index: 1;
+    /* khoảng cách trên của navbar_menu chưa đúng	tăng top */
+    top: 20px;
+    right: 0;
+    /* khoảng cách các chữ trong navbar_menu chưa đúng	thay đổi padding của navbar_menu và tăng line-height */
+    padding: 2px 8px;
+    /* màu  background của navbar chưa đúng	đổi màu background. Thực tế: sử dụng filter: bright-ness */
+    background-color: rgb(214, 190, 141);
+    filter: brightness(1.06);
+    display: none;
+}
+
+.navbar_menu a {
+    /* Loại bỏ thuộc tính padding của thẻ a */
+    font-size: 10.5px;
+    font-weight: 700;
+    /* khoảng cách các chữ trong navbar_menu chưa đúng	thay đổi padding của navbar_menu và tăng line-height */
+    line-height: 20.5px;
+    text-align: center;
+    /* loại viền chưa đúng	đổi thành dashed */
+    /* boder_bottom hơi đậm	giảm độ mờ của border */
+    border-bottom: 1px dashed rgba(81, 39, 25, 0.4);
+    color: #512719;
+    display: block;
+}
+
+a:last-child {
+    border: none;
+}
+
+.header_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .header {
+        max-width: 700px;
+    }
+
+    .header_navbar {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+/* --------------------------material------------------------------- */
+
+.container_img {
+    display: none;
+}
+
+.material {
+    position: relative;
+    width: 100%;
+    margin-bottom: 74px;
+}
+
+/* --------------------------des------------------------------- */
+
+.des {
+    width: 100%;
+    min-height: 742px;
+}
+
+.des_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.des_content {
+    min-height: 469px;
+    margin: 0 auto;
+    width: 79.53%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(49, 29, 21, 0.78));
+    border-radius: 37px;
+}
+
+/* --------------------------des_title------------------------------- */
+
+.des_title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: justify;
+    text-shadow: 2px 0px 1px #000000CF;
+}
+
+/* --------------------------list_product------------------------------- */
+
+.list_product {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.list_product>p {
+    font-family: "Bong Gio";
+    /* khoảng cách của chữ tượng thờ sai	chỉnh sửa lại margin */
+    margin: 0 auto;
+    font-size: 18px;
+    /* chữ tượng thờ line-height và font-weight chưa đúng	tăng line-height và sử dụng webkit-text-troke để tăng độ đậm cho chữ  */
+    line-height: 36px;
+    -webkit-text-stroke: 0.03px;
+    text-align: center;
+}
+
+.product_contain {
+    margin: 0 auto;
+    /* product_contain sai chiều rộng	set width:100%; */
+    width: 100%;
+    /* list_product chưa ở đúng vị trí	thêm padding cho list_product. Thực tế: product_contain thêm padding */
+    padding: 0 18px 0 26px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* --------------------------product_item------------------------------- */
+
+.product_item {
+    width: 32.11%;
+    max-height: 220px;
+    margin-bottom: 3px;
+}
+
+.product_item>img {
+    width: 100%;
+    max-height: 210px;
+    background-color: #1B1B1B;
+}
+
+.product_item p {
+    font-size: 10px;
+    font-weight: 700;
+    /* product_item p khoảng cách dưới của mã sản phẩm sai	tăng line-hight cho mã sản phẩm */
+    line-height: 14px;
+    text-align: center;
+}
+
+.product_item:nth-child(5) p,
+.product_item:nth-child(7) p,
+.product_item:nth-child(8) p,
+.product_item:nth-child(9) p {
+    color: #512719;
+}
+
+/* --------------------------product_detail------------------------------- */
+
+.product_detail {
+    width: 91.86%;
+    max-width: 450px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 769px;
+    border-radius: 50px;
+    /* background của product-detail sai	chỉnh lại màu background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(78, 0, 0, 0.94));
+    padding: 0 32px 46px 28px;
+}
+
+.product_detail p {
+    filter: brightness(1);
+}
+
+.detail_img_small {
+    position: absolute;
+}
+
+.detail_img_big {
+    position: absolute;
+    display: none;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.detail_info {
+    /* margin-bottom của detail sai	giảm margin-bottom */
+    margin-bottom: 26px;
+}
+
+.detail_info p:first-child {
+    font-family: "Bong Gio";
+    font-size: 32px;
+    font-weight: 700;
+    /* line-height của thẻ p đầu tiên trong detail_info sai	giảm line-height */
+    line-height: 32.24px;
+    /* tên sản phẩm bị ảnh đè lên	dùng position:relative và tăng z-index */
+    position: relative;
+    z-index: 1;
+}
+
+.detail_info p:nth-child(n+2) {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.19px;
+    margin-left: 2px;
+}
+
+.detail_info p:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+.detail_info p:last-child {
+    /* margin-top của thẻ p cuối cùng trong detail_info sai	tăng margin-top */
+    margin-top: 10px;
+}
+
+.detail_ads {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.1px;
+    text-align: justify;
+    margin: 0 0 23px 8px;
+}
+
+.detail_buy {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 18px 0 8px;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+}
+
+.buy p {
+    font-size: 10px;
+    line-height: 12.19px;
+    margin-left: 11px;
+    margin-left: 11px;
+}
+
+.buy:first-child img {
+    width: 37px;
+    height: 30px;
+}
+
+.buy:last-child img {
+    width: 20px;
+    height: 22px;
+}
+
+.detail_name_product {
+    display: none;
+    font-family: "Bong Gio";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36.74px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    text-wrap: nowrap;
+}
+
+@media only screen and (min-width: 481px) {
+    .material {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .des {
+        min-height: unset;
+    }
+
+    .des_content {
+        min-height: unset;
+    }
+
+    .des_title {
+        line-height: 18px;
+    }
+
+    .list_product {
+        opacity: unset;
+        position: unset;
+        transform: none;
+        margin: 33px 0;
+    }
+
+    .product_item {
+        max-height: unset;
+    }
+
+    .product_item>img {
+        max-height: unset;
+    }
+
+    .product_img {
+        display: none;
+    }
+
+    .product_detail {
+        display: flex;
+        position: relative;
+        transform: none;
+        left: 0;
+    }
+
+    .product_item:nth-child(5) p,
+    .product_item:nth-child(7) p,
+    .product_item:nth-child(8) p,
+    .product_item:nth-child(9) p {
+        color: #D6BE8D;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .container_img {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .material {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .des {
+        width: 50%;
+    }
+
+    .des_img {
+        display: none;
+    }
+
+    .des_content {
+        min-height: 469px;
+    }
+
+    .des_title {
+        line-height: 14.63px;
+    }
+
+    .list_product {
+        width: 50%;
+    }
+
+    .product_detail {
+        width: 50%;
+        display: none;
+    }
+
+    .product_item:nth-child(4) p,
+    .product_item:nth-child(5) p,
+    .product_item:nth-child(7) p,
+    .product_item:nth-child(8) p,
+    .product_item:nth-child(9) p {
+        color: #512719;
+    }
+}
+
+/* --------------------------footer------------------------------- */
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    height: 33px;
+    background-color: #512719;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer>p {
+    font-family: "Bong Gio";
+    font-size: 11px;
+    text-align: center;
+    line-height: 33px;
+    /* chữ trong footer màu sáng	sử dụng filter: brightness(); */
+    filter: brightness(0.75);
+}
